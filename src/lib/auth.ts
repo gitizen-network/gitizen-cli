@@ -4,7 +4,7 @@ import { log } from "../utils/logger.js";
 
 // GitHub OAuth App Client ID for Gitizen CLI
 // Device flow doesn't require a client secret — safe to embed
-const CLIENT_ID = "Ov23liYourClientId"; // TODO: Replace with real OAuth App client ID
+const CLIENT_ID = "Ov23lirRN7wVZ06HDWYc";
 
 export async function deviceFlowAuth(): Promise<string> {
 	const auth = createOAuthDeviceAuth({
