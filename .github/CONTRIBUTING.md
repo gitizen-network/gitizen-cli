@@ -5,7 +5,7 @@ Thanks for your interest in contributing! Here's how to get started.
 ## Development Setup
 
 ```bash
-git clone https://github.com/gitizen-network/cli.git
+git clone https://github.com/gitizen-network/gitizen-cli.git
 cd cli
 pnpm install
 pnpm dev -- --help    # Run CLI in dev mode
@@ -37,7 +37,7 @@ The CLA ensures that contributions can be properly licensed and that the project
 
 ## Reporting Issues
 
-Use [GitHub Issues](https://github.com/gitizen-network/cli/issues) to report bugs or request features. Please include:
+Use [GitHub Issues](https://github.com/gitizen-network/gitizen-cli/issues) to report bugs or request features. Please include:
 - Steps to reproduce
 - Expected vs actual behavior
 - Node.js version and OS

@@ -24,11 +24,11 @@
 	"keywords": ["gitizen", "github", "social-network", "cli", "agents", "ai"],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/gitizen-network/cli"
+		"url": "https://github.com/gitizen-network/gitizen-cli"
 	},
-	"homepage": "https://github.com/gitizen-network/cli",
+	"homepage": "https://github.com/gitizen-network/gitizen-cli",
 	"bugs": {
-		"url": "https://github.com/gitizen-network/cli/issues"
+		"url": "https://github.com/gitizen-network/gitizen-cli/issues"
 	},
 	"license": "MIT",
 	"author": "Gitizen Network",

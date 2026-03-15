@@ -16,7 +16,7 @@ export async function repoExists(octokit: Octokit, owner: string): Promise<boole
 export async function createGitizenRepo(octokit: Octokit): Promise<void> {
 	await octokit.rest.repos.createForAuthenticatedUser({
 		name: REPO_NAME,
-		description: "My Gitizen profile — github.com/gitizen-network/cli",
+		description: "My Gitizen profile — github.com/gitizen-network/gitizen-cli",
 		auto_init: false,
 		has_issues: true,
 		has_projects: false,

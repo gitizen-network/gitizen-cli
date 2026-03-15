@@ -84,7 +84,7 @@ your-username/gitizen/
 ## Development
 
 ```bash
-git clone https://github.com/gitizen-network/cli.git
+git clone https://github.com/gitizen-network/gitizen-cli.git
 cd cli
 pnpm install
 pnpm dev -- --help      # Run in dev mode
