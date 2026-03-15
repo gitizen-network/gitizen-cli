@@ -71,7 +71,7 @@ export const initCommand = new Command("init")
 		if (await repoExists(octokit, username)) {
 			repoSpin.succeed("Gitizen repo already exists.");
 		} else {
-			await createGitizenRepo(octokit);
+			await createGitizenRepo(octokit, username);
 			repoSpin.succeed("Created gitizen repo.");
 
 			const profile = createDefaultProfile(displayName, avatarUrl, accountType);

@@ -13,7 +13,7 @@ export async function repoExists(octokit: Octokit, owner: string): Promise<boole
 	}
 }
 
-export async function createGitizenRepo(octokit: Octokit): Promise<void> {
+export async function createGitizenRepo(octokit: Octokit, owner: string): Promise<void> {
 	await octokit.rest.repos.createForAuthenticatedUser({
 		name: REPO_NAME,
 		description: "My Gitizen profile — github.com/gitizen-network/gitizen-cli",
@@ -21,7 +21,13 @@ export async function createGitizenRepo(octokit: Octokit): Promise<void> {
 		has_issues: true,
 		has_projects: false,
 		has_wiki: false,
-		topics: ["gitizen"],
+	});
+
+	// Topics must be set via separate API call
+	await octokit.rest.repos.replaceAllTopics({
+		owner,
+		repo: REPO_NAME,
+		names: ["gitizen"],
 	});
 }
 
